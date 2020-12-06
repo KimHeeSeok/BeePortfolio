@@ -9,7 +9,7 @@ UI guide
 https://www.figma.com/file/WZZm8tplERLcC5iZtQrn74/Re?node-id=35%3A95
 
 React on Github
-http://JIHYE-P.github.io/react-github-pages
+https://velog.io/@byjihye/react-github-pages
 
 React Router
 https://www.sitepoint.com/react-router-complete-guide/
