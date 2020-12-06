@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+span, div, padding {
+  margin: 0px;
+}
+
 body {
   margin: 0;
+  background: #E5E5E5;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +23,88 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.top-navi {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  line-height: 60px;
+  z-index: 10;
+  border-bottom: 1px solid black;
+  flex: 0 1 60px;
+}
+
+.top-navi nav {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.top-navi li {
+  display: inline-block;
+}
+
+.top-navi li:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.page-main {
+  margin: 0px;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.page-main-inner {
+  position: absolute;
+  top:0px;
+  left:0;
+  right: 0;
+  bottom:0;
+  padding: 0px;
+  margin: 0;
+}
+
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
