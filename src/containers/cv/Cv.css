@@ -1,84 +1,53 @@
-#e87_54 { 
-	overflow-y:auto;
-	background-color:rgba(255, 255, 255, 1);
-	opacity:1;
-	width:1440px;
-	display: block;
-	position:relative;
+.cv-body div:not(:last-of-type){
+	margin-right: 30px;
 }
-#e87_53 { 
-	overflow-y:auto;
-	background-color:rgba(255, 255, 255, 1);
-	opacity:1;
-	width:1440px;
-	height:1464px;
-	position:relative;
-	left:0px;
-	top:0px;
+
+.cv-body h2{
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #20252E;
+	margin-block-start: 0;
+	margin-block-end: 0;
+
+	margin-bottom: 16px;
 }
-#e87_52 { 
-	color:rgba(32.00000189244747, 37.00000159442425, 46.000001057982445, 1);
-	opacity:1;
-	width:383px;
-	height:487px;
-	position:absolute;
-	left:510px;
-	top:162px;
-	text-align:left;
-	font-size:16px;
-	letter-spacing:0;
-	line-height:undefined;
+
+.cv-body h2:not(:first-of-type) {
+	margin-top: 50px;
 }
-#e87_55 { 
-	color:rgba(32.00000189244747, 37.00000159442425, 46.000001057982445, 1);
-	opacity:1;
-	width:383px;
-	height:487px;
-	position:absolute;
-	left:510px;
-	top:601px;
-	text-align:left;
-	font-size:16px;
-	letter-spacing:0;
-	line-height:undefined;
+
+.cv-body h3{
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #20252E;
+	margin-block-start: 0;
+    margin-block-end: 0;
 }
-#e35_130 { 
-	color:rgba(32.00000189244747, 37.00000159442425, 46.000001057982445, 1);
-	opacity:1;
-	width:320px;
-	height:753px;
-	position:absolute;
-	left:70px;
-	top:162px;
-	text-align:left;
-	font-size:16px;
-	letter-spacing:0;
-	line-height:undefined;
+
+.cv-body p {
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 25px;
+	color: #20252E;
+
+	margin-bottom: 20px;
 }
-#e35_131 { 
-	color:rgba(32.00000189244747, 37.00000159442425, 46.000001057982445, 1);
-	opacity:1;
-	width:320px;
-	height:1212px;
-	position:absolute;
-	left:950px;
-	top:162px;
-	text-align:left;
-	font-size:16px;
-	letter-spacing:0;
-	line-height:undefined;
-}
-#e35_129 { 
-	color:rgba(32.00000189244747, 37.00000159442425, 46.000001057982445, 1);
-	opacity:1;
-	width:93px;
-	height:67px;
-	position:absolute;
-	left:70px;
-	top:41px;
-	font-family:Noto Serif;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
-	line-height:undefined;
+
+.cv-body p span {
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: #20252E;
 }

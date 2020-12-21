@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+KR:wght@300;500;600&display=swap');
 
 html,
 body {
   height: 100%;
   overflow-y: hidden;
+
+  --contents-with:1920px;
+  --contents-left-margin:80px;
+  --contents-right-margin:80px;
 }
 
 span, div, padding {
@@ -12,7 +17,7 @@ span, div, padding {
 
 body {
   margin: 0;
-  background: #E5E5E5;
+  /* background: #E5E5E5; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -47,37 +52,11 @@ p {
   flex-direction: column;
 }
 
-
-.top-navi {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #fff;
-  line-height: 60px;
-  z-index: 10;
-  border-bottom: 1px solid black;
-  flex: 0 1 60px;
-}
-
-.top-navi nav {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0px;
-}
-
-.top-navi li {
-  display: inline-block;
-}
-
-.top-navi li:not(:last-of-type) {
-  margin-right: 40px;
-}
-
 .page-main {
   margin: 0px;
   flex: 1 1 auto;
   position: relative;
+  overflow-y: scroll;
 }
 
 .page-main-inner {
@@ -88,8 +67,16 @@ p {
   bottom:0;
   padding: 0px;
   margin: 0;
+
+  max-width: var(--contents-with);
+  margin-left: auto;
+  margin-right: auto;  
 }
 
+.page-main-content {
+  padding-left: var(--contents-left-margin); 
+  padding-right: var(--contents-right-margin); 
+}
 
 .fade-enter {
   opacity: 0.01;
@@ -107,4 +94,15 @@ p {
 .fade-exit.fade-exit-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
+}
+
+.vertical-center {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.horizontal-center {
+  margin-left: auto;
+	margin-right: auto;
 }

@@ -1,28 +1,14 @@
 import React, { ComponentType } from "react";
-import { withRouter, Link, Route, BrowserRouter , Switch, RouteComponentProps, useLocation, RouteProps } from "react-router-dom";
+import { withRouter, Link, Route, useRouteMatch , Switch, RouteComponentProps, useLocation, RouteProps, Redirect } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import 'containers/Common.css';
 import TopNavi from 'components/topNavi/TopNavi';
 import Bio from "containers/bio/Bio";
 import Cv from "containers/cv/Cv";
+import Expertise from "containers/expertise/Expertise";
 import Projects from "containers/projects/Projects";
 
-const Home = ({ match }: RouteComponentProps) => {
-  console.log(match);
-
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-};
-
-const Experise = () => (
-  <div>
-    <h2>Experise</h2>
-  </div>
-);
-
-function App({ location }: RouteComponentProps) {
+function App({ location, match }: RouteComponentProps) {
 
   // const currentKey = location.pathname.split('/')[1] || '/';
   const currentKey = location.key
@@ -41,16 +27,15 @@ function App({ location }: RouteComponentProps) {
           classNames="fade" >
 
           <section className="page-main-inner">
-            <Switch location={location}>
-              <Route exact path="/" component={Home} />
-              <Route path="/bio"><Bio /></Route>
-              <Route path="/cv"><Cv /></Route>
-              <Route path="/expertise"><Experise /></Route>
-              <Route path="/projects"><Projects /></Route>
-              <Route path="/:id">
-                <p>This text will render for any route other than those defined above</p>
-              </Route>
-            </Switch>
+            <div className="page-main-content">
+              <Switch location={location}>
+                <Route path={`${match.path}/bio`}><Bio /></Route>
+                <Route path={`${match.path}/cv`} ><Cv /></Route>
+                <Route path={`${match.path}/expertise`} ><Expertise /></Route>
+                <Route path={`${match.path}/projects`} ><Projects /></Route>
+                <Redirect to={`${match.path}/bio`} />
+              </Switch>
+            </div>
           </section>
 
         </CSSTransition>

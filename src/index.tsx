@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import './index.css';
 import App from './components/app/App';
+import Intro from './containers/Intro';
 import reportWebVitals from './utils/reportWebVitals';
+
+
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <Switch>
+      <Route path="/app"><App /></Route>
+      <Route><Intro /></Route>
+    </Switch>
+
   </BrowserRouter>,
   document.getElementById('root')
 );

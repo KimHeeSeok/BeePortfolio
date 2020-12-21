@@ -1,0 +1,44 @@
+.content {
+	background-color: #fff;
+    position: relative;
+    width: 100%;
+
+	top:63px;
+	display: inline-flex;
+	flex-flow:row;
+	justify-content: space-between;
+}
+
+.content-header { 
+	color:rgba(32.00000189244747, 37.00000159442425, 46.000001057982445, 1);
+	opacity:1;
+	font-family:Noto Serif;
+	text-align:left;
+	font-size:50px;
+	letter-spacing:0;
+}
+
+.content-margin {
+	flex-grow: 2;
+	flex-basis: 0;
+}
+
+.content-body-width9 {
+	flex-grow: 9;
+	flex-basis: 0;
+}
+
+.content-body-width3 {
+	flex-grow: 3;
+	flex-basis: 0;
+}
+
+.content-body-width2 {
+	flex-grow: 2;
+	flex-basis: 0;
+}
+
+.content-body-width1 {
+	flex-grow: 1;
+	flex-basis: 0;
+}
