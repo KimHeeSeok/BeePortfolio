@@ -11,16 +11,15 @@ const divStyle: CSSProperties = {
 export default function Intro() {
     return (
         <div style={divStyle} >
-            <div id="e529_3">
-                <div id="e529_4" className={"vertical-center horizontal-center"} >
-                    <div id="e529_5"><span id="e529_6">Eunbi Kim portfolio</span><span id="e529_7">Digital & spatial 
-                    visual experience designer</span></div>
-                    <Link to="/app" >
-                        <div id="e529_8">
-                            <div id="e529_9"></div>
-                            <div id="e529_10"><span id="e529_11" >Enter</span>
-                            <div id="e529_12"><img src={require('../images/arrow.svg')}/></div>
-                            </div>
+            <div id="intro_bg">
+                <div id="intro_content" className={"vertical-center horizontal-center"} >
+                    <div id="intro_text1">Digital & spatial<br/>
+                    visual experience designer</div>
+                    <div id="intro_text2">Eunbi Kim portfolio</div>
+                    <Link to="/app" style={{ textDecoration: 'none' }}>
+                        <div id="intro_white_box">
+                            <span>Enter</span>
+                            <img src={require('../images/arrow.svg')}/>
                         </div>
                     </Link>
 

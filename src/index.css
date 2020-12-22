@@ -1,15 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+KR:wght@300;500;600&display=swap');
 
-html,
-body {
-  height: 100%;
-  overflow-y: hidden;
-
-  --contents-with:1920px;
-  --contents-left-margin:80px;
-  --contents-right-margin:80px;
+/* phone */
+@media all and (max-width: 767px) { 
+  html,
+  body {
+    height: 100%;
+    overflow-y: hidden;
+  
+    --contents-with:100%;
+    --contents-left-margin:0px;
+    --contents-right-margin:0px;
+  }
 }
+
+/* default */
+@media all and (min-width: 768px) and (max-width:1920px) {
+  html,
+  body {
+    height: 100%;
+    overflow-y: hidden;
+
+    --contents-with:100%;
+    --contents-left-margin:80px;
+    --contents-right-margin:80px;
+  }
+}
+
+/* larger than 1920px */
+@media all and (min-width: 1921px) { 
+  html,
+  body {
+    height: 100%;
+    overflow-y: hidden;
+  
+    --contents-with:1920px;
+    --contents-left-margin:80px;
+    --contents-right-margin:80px;
+  }
+}
+
 
 span, div, padding {
   margin: 0px;
@@ -56,7 +86,7 @@ p {
   margin: 0px;
   flex: 1 1 auto;
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .page-main-inner {
