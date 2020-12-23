@@ -1,12 +1,37 @@
+/* phone */
+@media all and (max-width: 767px) { 
+	.content {
+		 top:40px;
+		 flex-flow:column;
+	}
+
+	.content-header { 
+		font-size:20px;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+/* others */
+@media all and (min-width: 768px) {
+	.content {
+		top:63px;
+		flex-flow:row;
+		justify-content: space-between;
+	}
+
+	.content-header { 
+		font-size:50px;
+	}
+}
+
 .content {
 	background-color: #fff;
     position: relative;
     width: 100%;
 
-	top:63px;
 	display: inline-flex;
-	flex-flow:row;
-	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .content-header { 
@@ -14,8 +39,8 @@
 	opacity:1;
 	font-family:Noto Serif;
 	text-align:left;
-	font-size:50px;
 	letter-spacing:0;
+	display: inline-block;
 }
 
 .content-margin {

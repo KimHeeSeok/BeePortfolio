@@ -9,8 +9,8 @@
     overflow-y: hidden;
   
     --contents-with:100%;
-    --contents-left-margin:0px;
-    --contents-right-margin:0px;
+    --contents-left-margin:20px;
+    --contents-right-margin:20px;
   }
 }
 

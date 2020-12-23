@@ -1,16 +1,42 @@
-#bio_text_1 {
+/* phone */
+@media all and (max-width: 767px) { 
+	body {
+		--bio_text_size: 18px
+	}
+
+	#bio-margin {
+	
+	}
+}
+
+/* others */
+@media all and (min-width: 768px) {
+	body {
+		--bio_text_size: 36px
+	}
+
+	#bio-margin {
+		flex-grow: 2;
+		flex-basis: 0;
+	}
+
+	#bio-content {
+		flex-grow: 9;
+		flex-basis: 0;
+	}
+}
+
+.bio_text_1 {
 	font-family: 'Noto Serif KR';
 	font-weight: 300;
-	font-size: 36px;
-	line-height: 49px;
+	font-size: var(--bio_text_size);
 	color: #20252E;
 }
 
-#bio_text_2 {
+.bio_text_2 {
 	font-family: 'Noto Serif KR';
 	font-weight: 500;
-	font-size: 36px;
-	line-height: 49px;
+	font-size: var(--bio_text_size);
 	border-bottom: 2px solid #20252E;
 	/* text-decoration: underline; */
 	color: #20252E;

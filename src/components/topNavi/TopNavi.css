@@ -39,10 +39,22 @@
     line-height: 27px;
     color: #20252E;
   }
-  
+
+  /* phone */
+@media all and (max-width: 767px) { 
+  .top-navi li:not(:first-of-type) {
+    margin-left: 15px;
+  }
+}
+
+/* others */
+@media all and (min-width: 768px) {
   .top-navi li:not(:first-of-type) {
     margin-left: 40px;
   }
+}
+  
+
 
   .active-link {
     border-bottom: 1px solid #20252E;

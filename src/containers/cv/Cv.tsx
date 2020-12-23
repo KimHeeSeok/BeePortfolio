@@ -56,6 +56,7 @@ export default function Cv() {
                     <span>Tent London, </span>1/2 Project, 2010, UK<br/>
                     <span>Reddot Design Award, </span>Communication design winner, 2010<br/>
                 </p>
+                <br/><br/>
             </div>
 
             <div className="cv-body content-body-width3">
@@ -102,20 +103,6 @@ export default function Cv() {
                 </p>
 
                 <br/><br/>
-                <h2>patents</h2>
-                <p>
-                    <span>Display Apparatus and Method for displaying, </span>US KR EP CN WO<br/>
-                    <span>A method of searching the menu by recognizing the user’s gesture on a screen, </span>KR<br/>
-                    <span>A method of using multiple applications on a screen of wearable device, </span>KR<br/>
-                    <span>How to create and control the cooking timeline through the smart cooking manager cloud, </span>KR<br/>
-                    <span>A method of message deformation through the shuttle button operation in watch type wearable device, </span>US KR WO<br/>
-                    <span>Method of saving TV channels currently watching and managing saved channels, </span>US KR IN EP CN WO<br/>
-                </p>
-            </div>
-
-            <div className="cv-body content-body-width3">
-                <h2>&nbsp;</h2>
-                <br/>
                 <h3>2015</h3>
                 <p>
                     Next TV, <span>UX / GUI</span><br/>
@@ -144,6 +131,22 @@ export default function Cv() {
                 <p>
                     Interactive Drive, Smart Infotainment System, <span>UX / GUI, Prototype</span><br/>
                     Next Wearable Devices, <span>UX / GUI, User Scenario Film</span><br/>
+                </p>
+                <br/><br/>
+            </div>
+
+            <div className="cv-body content-body-width3">
+                {/* <h2>&nbsp;</h2>
+                <br/> */}
+                <h2>patents</h2>
+                <br/>
+                <p>
+                    <span>Display Apparatus and Method for displaying, </span>US KR EP CN WO<br/>
+                    <span>A method of searching the menu by recognizing the user’s gesture on a screen, </span>KR<br/>
+                    <span>A method of using multiple applications on a screen of wearable device, </span>KR<br/>
+                    <span>How to create and control the cooking timeline through the smart cooking manager cloud, </span>KR<br/>
+                    <span>A method of message deformation through the shuttle button operation in watch type wearable device, </span>US KR WO<br/>
+                    <span>Method of saving TV channels currently watching and managing saved channels, </span>US KR IN EP CN WO<br/>
                 </p>
             </div>
 
