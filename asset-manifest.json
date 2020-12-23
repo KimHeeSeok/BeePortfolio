@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/BeePortfolio/static/css/main.4934bb39.chunk.css",
-    "main.js": "/BeePortfolio/static/js/main.9b867820.chunk.js",
-    "main.js.map": "/BeePortfolio/static/js/main.9b867820.chunk.js.map",
+    "main.css": "/BeePortfolio/static/css/main.ddf5faf2.chunk.css",
+    "main.js": "/BeePortfolio/static/js/main.473d5bfb.chunk.js",
+    "main.js.map": "/BeePortfolio/static/js/main.473d5bfb.chunk.js.map",
     "runtime-main.js": "/BeePortfolio/static/js/runtime-main.e0f5dd2a.js",
     "runtime-main.js.map": "/BeePortfolio/static/js/runtime-main.e0f5dd2a.js.map",
     "static/js/2.a70bbd8b.chunk.js": "/BeePortfolio/static/js/2.a70bbd8b.chunk.js",
@@ -12,13 +12,13 @@
     "bee.svg": "/BeePortfolio/128e740f4eb48ec7325220388f990c45.svg",
     "arrow.svg": "/BeePortfolio/e9ced38e29c6487e42bc1be680c82596.svg",
     "index.html": "/BeePortfolio/index.html",
-    "static/css/main.4934bb39.chunk.css.map": "/BeePortfolio/static/css/main.4934bb39.chunk.css.map",
+    "static/css/main.ddf5faf2.chunk.css.map": "/BeePortfolio/static/css/main.ddf5faf2.chunk.css.map",
     "static/js/2.a70bbd8b.chunk.js.LICENSE.txt": "/BeePortfolio/static/js/2.a70bbd8b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e0f5dd2a.js",
     "static/js/2.a70bbd8b.chunk.js",
-    "static/css/main.4934bb39.chunk.css",
-    "static/js/main.9b867820.chunk.js"
+    "static/css/main.ddf5faf2.chunk.css",
+    "static/js/main.473d5bfb.chunk.js"
   ]
 }
