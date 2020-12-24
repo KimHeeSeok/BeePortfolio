@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/BeePortfolio/static/css/main.ddf5faf2.chunk.css",
-    "main.js": "/BeePortfolio/static/js/main.473d5bfb.chunk.js",
-    "main.js.map": "/BeePortfolio/static/js/main.473d5bfb.chunk.js.map",
-    "runtime-main.js": "/BeePortfolio/static/js/runtime-main.e0f5dd2a.js",
-    "runtime-main.js.map": "/BeePortfolio/static/js/runtime-main.e0f5dd2a.js.map",
-    "static/js/2.a70bbd8b.chunk.js": "/BeePortfolio/static/js/2.a70bbd8b.chunk.js",
-    "static/js/2.a70bbd8b.chunk.js.map": "/BeePortfolio/static/js/2.a70bbd8b.chunk.js.map",
-    "static/js/3.2364ab84.chunk.js": "/BeePortfolio/static/js/3.2364ab84.chunk.js",
-    "static/js/3.2364ab84.chunk.js.map": "/BeePortfolio/static/js/3.2364ab84.chunk.js.map",
+    "main.css": "/BeePortfolio/static/css/main.dbca92c8.chunk.css",
+    "main.js": "/BeePortfolio/static/js/main.08d8ee01.chunk.js",
+    "main.js.map": "/BeePortfolio/static/js/main.08d8ee01.chunk.js.map",
+    "runtime-main.js": "/BeePortfolio/static/js/runtime-main.d9d817c0.js",
+    "runtime-main.js.map": "/BeePortfolio/static/js/runtime-main.d9d817c0.js.map",
+    "static/js/2.4ec2319c.chunk.js": "/BeePortfolio/static/js/2.4ec2319c.chunk.js",
+    "static/js/2.4ec2319c.chunk.js.map": "/BeePortfolio/static/js/2.4ec2319c.chunk.js.map",
+    "static/js/3.8d190192.chunk.js": "/BeePortfolio/static/js/3.8d190192.chunk.js",
+    "static/js/3.8d190192.chunk.js.map": "/BeePortfolio/static/js/3.8d190192.chunk.js.map",
     "bee.svg": "/BeePortfolio/128e740f4eb48ec7325220388f990c45.svg",
     "arrow.svg": "/BeePortfolio/e9ced38e29c6487e42bc1be680c82596.svg",
     "index.html": "/BeePortfolio/index.html",
-    "static/css/main.ddf5faf2.chunk.css.map": "/BeePortfolio/static/css/main.ddf5faf2.chunk.css.map",
-    "static/js/2.a70bbd8b.chunk.js.LICENSE.txt": "/BeePortfolio/static/js/2.a70bbd8b.chunk.js.LICENSE.txt"
+    "static/css/main.dbca92c8.chunk.css.map": "/BeePortfolio/static/css/main.dbca92c8.chunk.css.map",
+    "static/js/2.4ec2319c.chunk.js.LICENSE.txt": "/BeePortfolio/static/js/2.4ec2319c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e0f5dd2a.js",
-    "static/js/2.a70bbd8b.chunk.js",
-    "static/css/main.ddf5faf2.chunk.css",
-    "static/js/main.473d5bfb.chunk.js"
+    "static/js/runtime-main.d9d817c0.js",
+    "static/js/2.4ec2319c.chunk.js",
+    "static/css/main.dbca92c8.chunk.css",
+    "static/js/main.08d8ee01.chunk.js"
   ]
 }
