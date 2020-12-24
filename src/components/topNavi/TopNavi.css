@@ -1,67 +1,76 @@
-.top-navi-container {
-    top: 0;
-    left: 0;
-    height: 60px;
-    background-color: #fff;
-    line-height: 60px;
-    z-index: 10;
-    border-bottom: 1px solid black;
-    flex: 0 1 60px;
-  }
-  
-  .top-navi {
-    max-width: var(--contents-with);
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .top-navi nav {
-    margin-left: var(--contents-left-margin); 
-    margin-right: var(--contents-right-margin); 
-    display: flex;
-  }
-
-  .top-navi ul {
-    width: 100%;
-    text-align: right;
-  }
-
-  .top-navi-logo {
-    vertical-align: middle;
-  }
-  
-  .top-navi li {
-    display: inline-block;
-    font-family: Noto Serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
-    color: #20252E;
-  }
-
-  /* phone */
+/* phone */
 @media all and (max-width: 767px) { 
-  .top-navi li:not(:first-of-type) {
-    margin-left: 15px;
+
+  body {
+    --li-margin: 15px;
+    --li-font-size: 16px;
   }
+
 }
 
 /* others */
 @media all and (min-width: 768px) {
-  .top-navi li:not(:first-of-type) {
-    margin-left: 40px;
+
+  body {
+    --li-margin: 40px;
+    --li-font-size: 20px;
   }
 }
+   
+
+.top-navi-container {
+  top: 0;
+  left: 0;
+  height: 60px;
+  background-color: #fff;
+  line-height: 60px;
+  z-index: 10;
+  border-bottom: 1px solid black;
+  flex: 0 1 60px;
+}
   
+.top-navi {
+  max-width: var(--contents-with);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-navi nav {
+  margin-left: var(--contents-left-margin); 
+  margin-right: var(--contents-right-margin); 
+  display: flex;
+}
+
+.top-navi ul {
+  width: 100%;
+  text-align: right;
+}
+
+.top-navi-logo {
+  vertical-align: middle;
+}
+
+.top-navi li {
+  display: inline-block;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--li-font-size);
+  line-height: 27px;
+  color: #20252E;
+}
 
 
-  .active-link {
-    border-bottom: 1px solid #20252E;
-  }
+.top-navi li:not(:first-of-type) {
+  margin-left: var(--li-margin);
+}
 
-  .normal-link {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #20252E;
-  }
+.active-link {
+  border-bottom: 1px solid #20252E;
+}
+
+.normal-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #20252E;
+}

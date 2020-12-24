@@ -1,0 +1,124 @@
+/* phone */
+@media all and (max-width: 767px) { 
+    body {
+        --circle-size: 100%;
+        --circle-text-padding:10px;
+        --circle-text-size:16px;
+    }
+
+	#expertise-margin {
+	
+    }
+    
+    #circle-container{
+
+    }
+}
+
+/* others */
+@media all and (min-width: 768px) {
+    body {
+        --circle-size: 50%;
+        --circle-text-padding:30px;
+        --circle-text-size:28px;
+    }
+
+	#expertise-margin {
+		/* flex-grow: 6; */
+		/* flex-basis: 0; */
+    }
+    
+    #circle-container{
+        flex-grow: 6;
+        flex-basis: 0;
+        
+        -ms-transform: translateX(-20%); 
+        transform: translateX(-20%);
+    }
+}
+
+#circle-container {
+    /* width:  calc(var(--circle-size)*2.1); */
+    /* height: calc(var(--circle-size)*2.1); */
+    /* border: 10px solid teal; */
+
+    position: relative;
+    width: var(--circle-size);
+}
+
+#circle-container:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+#circle-tech {
+    -ms-transform: translateX(40%);
+    transform: translateX(40%);
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#circle-people {
+    -ms-transform: translateY(40%);
+    transform: translateY(40%);
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#circle-experience {
+    -ms-transform: translateX(80%) translateY(40%);
+    transform: translateX(80%) translateY(40%);
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#circle-space {
+    -ms-transform: translateX(40%) translateY(80%);
+    transform: translateX(40%) translateY(80%);
+
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.circle {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+
+    border-radius: 50%;
+
+    border: 2px solid #000000;
+    padding: var(--circle-text-padding);
+    display: inline-flex;
+
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--circle-text-size);
+    color: #20252E;
+}
+
+#expertise-text {
+    flex-grow: 4;
+    flex-basis: 0;
+}
+
+#expertise-text p {
+    font-family: Noto Serif KR;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #20252E;
+}
+
+#expertise-text p span {
+    font-family: Noto Serif KR;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #20252E;
+}

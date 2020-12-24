@@ -1,13 +1,32 @@
 import { CSSProperties } from 'react';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import './Expertise.css';
 
 export default function Expertise() {
     return (
-        <div className="content" >
-            <div className="content-header content-body-width1">Expertise</div>
-            <div className="content-body-width2" />
-            <div className="content-body-width9">
+        <div id="main-container" >
+            <div id="main-header" >Expertise</div>
 
+            <div id="circle-container">
+                <span id="circle-tech" className="circle">Tech</span>
+                <span id="circle-people" className="circle">People</span>
+                <span id="circle-experience" className="circle">Experience</span>
+                <span id="circle-space" className="circle">Space</span>
+            </div>
+
+            <div id="expertise-margin"></div>
+
+            <div id="expertise-text">
+                <p>
+                <span>  People<br/>
+                + Technology<br/>
+                + Space<br/>
+                + Experience</span><br/>
+                =<br/>
+                Multi-disciplinary<br/>
+                Omnichannel experience<br/>
+                Foresight researcher/designer<br/>
+                </p>
             </div>
         </div>
     );

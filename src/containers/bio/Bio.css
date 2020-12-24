@@ -7,6 +7,9 @@
 	#bio-margin {
 	
 	}
+
+	#bio-content {
+	}
 }
 
 /* others */
@@ -16,7 +19,7 @@
 	}
 
 	#bio-margin {
-		flex-grow: 2;
+		flex-grow: 1;
 		flex-basis: 0;
 	}
 

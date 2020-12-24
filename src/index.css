@@ -71,7 +71,6 @@ p {
   margin: 0;
 }
 
-
 #root {
   height: 100%;
 }
@@ -83,24 +82,50 @@ p {
 }
 
 .page-main {
-  margin: 0px;
   flex: 1 1 auto;
   position: relative;
-  overflow-y: auto;
+  overflow-y: scroll;
+
+  /* for scrollbar*/
+  margin: 6px;
+}
+
+
+::-webkit-scrollbar { 
+  width: 7px; 
+  /* Optional: just make scrollbar invisible */
+  /* background: transparent;  */
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  /* border: 1px solid #20252E; */
+  
+  background: rgba(0,0,0,0.0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px; 
+  box-shadow: rgba(255,255,255,0.3) 10px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.20);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.20);
 }
 
 .page-main-inner {
   position: absolute;
-  top:0px;
-  left:0;
-  right: 0;
-  bottom:0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   padding: 0px;
-  margin: 0;
+  margin: 0px;
 
   max-width: var(--contents-with);
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
 }
 
 .page-main-content {
