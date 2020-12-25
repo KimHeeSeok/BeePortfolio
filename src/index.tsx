@@ -6,8 +6,6 @@ import App from './components/app/App';
 import Intro from './containers/Intro';
 import reportWebVitals from './utils/reportWebVitals';
 
-
-
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
