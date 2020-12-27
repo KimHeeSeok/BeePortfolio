@@ -1,8 +1,15 @@
 import React from "react";
 import { Link, Route, useParams, useRouteMatch } from "react-router-dom";
 
+interface ParamTypes {
+  name: string
+}
+
 const Item = () => {
-  const { name } = useParams();
+  const { url, path } = useRouteMatch();
+  console.log(`Item. url=${url} path=${path} `);
+
+  const { name } = useParams<ParamTypes>();
 
   return (
     <div>
@@ -14,6 +21,8 @@ const Item = () => {
 const Projects = () => {
   const { url, path } = useRouteMatch();
 
+  console.log(`Projects. url=${url} path=${path} `);
+
   return (
     <div>
       <ul>
@@ -24,7 +33,7 @@ const Projects = () => {
           <Link to={`${url}/spatial`}>Spatial UX</Link>
         </li>
       </ul>
-      <Route path={`${path}/:name`}>
+      <Route path={`${url}/:name`}>
         <Item />
       </Route>
     </div>

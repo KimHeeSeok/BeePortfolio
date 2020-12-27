@@ -20,7 +20,9 @@
     body {
         --circle-size: 50%;
         --circle-text-padding:30px;
-        --circle-text-size:28px;
+        /* --circle-text-size:28px; */
+
+        --circle-text-size: min(28px, calc(10px + (28 - 10) * ((100vw - 768px) / (1920.0 - 768.0))));
     }
 
 	#expertise-margin {
@@ -32,8 +34,8 @@
         flex-grow: 6;
         flex-basis: 0;
         
-        -ms-transform: translateX(-20%); 
-        transform: translateX(-20%);
+        -ms-transform: translateX(-30%); 
+        transform: translateX(-30%);
     }
 }
 

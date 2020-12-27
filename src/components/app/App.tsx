@@ -10,36 +10,40 @@ import Projects from "containers/projects/Projects";
 
 function App({ location, match }: RouteComponentProps) {
 
+  // console.log(`App location=${location.pathname} match=${match.path}`);
+
   // const currentKey = location.pathname.split('/')[1] || '/';
   const currentKey = location.key
   const timeout = { enter: 300, exit: 300 };
 
-  
-  const [scrollbarWidth, setScrollbarWidth] = useState(0);
-
-
+  var scrollbarCover:HTMLElement|null|undefined;
   var showTimeout: NodeJS.Timeout;
   const handleScroll = (event: Event) => {
 
-    if(event.target instanceof Element) {
-
-      if (event.target?.classList?.contains("on-scrollbar") === false) {
-          event.target.classList.add("on-scrollbar");
-
-          clearTimeout(showTimeout);
-
-          showTimeout = setTimeout(()=>{
-            if(event.target instanceof Element) {
-              event.target.classList.remove("on-scrollbar");
-            }
-
-          }, 1000);
+    if(scrollbarCover) {
+      if(scrollbarCover.classList.contains("on-scroll") === false) {
+        showScroll();
       }
     }
   };
 
+  function showScroll() {
+    if(scrollbarCover) {
+      scrollbarCover.classList.add("on-scroll");
+    
+      clearTimeout(showTimeout);
+      showTimeout = setTimeout(()=>{
+        scrollbarCover?.classList.remove("on-scroll");
+      }, 1000);
+    }
+  }
+
   useEffect(() => {
     // Anything in here is fired on component mount.
+
+    const appDiv = document.getElementById('app');
+    scrollbarCover = appDiv?.querySelector('.scrollbar-cover');
+    
     window.addEventListener('scroll', handleScroll, true);
 
     // Create the measurement node
@@ -48,8 +52,12 @@ function App({ location, match }: RouteComponentProps) {
     document.body.appendChild(scrollDiv);
 
     // Get the scrollbar width
-    setScrollbarWidth(scrollDiv.offsetWidth - scrollDiv.clientWidth);
-    console.warn("[0] " + (scrollDiv.offsetWidth - scrollDiv.clientWidth)); // Mac:  15
+    const scrollBarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+    if(scrollbarCover) {
+      scrollbarCover.style.width = `${scrollBarWidth}px`;
+      showScroll();
+    }
+    console.warn("[0] " + (scrollBarWidth)); // Mac:  15
 
     // Delete the DIV 
     document.body.removeChild(scrollDiv);
@@ -60,7 +68,6 @@ function App({ location, match }: RouteComponentProps) {
     }
   }, []);
    
-
   useEffect(() => {
     const pageMain = document.getElementById('page-main');
     const pageMainInner = document.getElementById('page-main-inner');
@@ -82,19 +89,18 @@ function App({ location, match }: RouteComponentProps) {
 
 
   return (
-    <div className="app">
+    <div id="app">
 
       <TopNavi />
 
       { /* Route components are rendered if the path prop matches the current URL */ }
-      <TransitionGroup className="page-main">
+      <TransitionGroup id="page-main">
         <CSSTransition
           key={currentKey}
           timeout={timeout}
           classNames="fade" >
 
-          <section id="page-main-inner">
-            <div className="page-main-content">
+          <section id="page-main-content">
               <Switch location={location}>
                 <Route path={`${match.path}/bio`}><Bio /></Route>
                 <Route path={`${match.path}/cv`} ><Cv /></Route>
@@ -102,12 +108,11 @@ function App({ location, match }: RouteComponentProps) {
                 <Route path={`${match.path}/projects`} ><Projects /></Route>
                 <Redirect to={`${match.path}/bio`} />
               </Switch>
-            </div>
           </section>
-
         </CSSTransition>
       </TransitionGroup>
-      
+
+      <div className="scrollbar-cover" />
     </div>
   );
 }
