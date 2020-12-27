@@ -65,11 +65,11 @@
   margin-left: var(--li-margin);
 }
 
-.active-link {
+.top-navi .active-link {
   border-bottom: 1px solid #20252E;
 }
 
-.normal-link {
+.top-navi .normal-link {
   text-transform: uppercase;
   text-decoration: none;
   color: #20252E;

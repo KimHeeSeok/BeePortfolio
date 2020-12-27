@@ -1,19 +1,33 @@
 import React from "react";
-import { Link, Route, useParams, useRouteMatch } from "react-router-dom";
-
+import { Link, NavLink, Redirect, Route, useParams, useRouteMatch } from "react-router-dom";
+import ProjectItem from './ProjectItem';
+import {items as projectListDigital} from './ProjectListDigital.json';
+import {items as projectListSpatial} from './ProjectListSpatial.json';
+import './Projects.css';
 interface ParamTypes {
   name: string
 }
 
-const Item = () => {
+const ProjectCategory = () => {
   const { url, path } = useRouteMatch();
-  console.log(`Item. url=${url} path=${path} `);
-
   const { name } = useParams<ParamTypes>();
 
+  // console.log(`ProjectCategory. url=${url} path=${path} `);
+
   return (
-    <div>
-      <h3>{name}</h3>
+    <div id="project-category">
+      <ul className="grid-list" >
+        {
+          (name === "digital") ? 
+            projectListDigital.map((projectData, index) => {
+              return <ProjectItem key={index} projectData={projectData} />
+            }) 
+          :
+            projectListSpatial.map((projectData, index) => {
+              return <ProjectItem key={index} projectData={projectData} />
+            })
+        }
+      </ul>
     </div>
   );
 }
@@ -21,20 +35,23 @@ const Item = () => {
 const Projects = () => {
   const { url, path } = useRouteMatch();
 
-  console.log(`Projects. url=${url} path=${path} `);
+  // console.log(`Projects. url=${url} path=${path} `);
 
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to={`${url}/digital`}>Digital UX/GUI</Link>
-        </li>
-        <li>
-          <Link to={`${url}/spatial`}>Spatial UX</Link>
-        </li>
-      </ul>
+    <div id="project-container" >
+        <nav className="sub-navi">
+            <ul>
+                <li><NavLink activeClassName="active-link" className="normal-link" to={`${url}/digital`} >Digital UX/GUI</NavLink></li>
+                <li><NavLink activeClassName="active-link" className="normal-link" to={`${url}/spatial`} >Spatial UX</NavLink></li>
+            </ul>
+        </nav>
+
       <Route path={`${url}/:name`}>
-        <Item />
+        <ProjectCategory />
+      </Route>
+
+      <Route exact path={`${url}/`} >
+        <Redirect to={`${url}/digital`} />
       </Route>
     </div>
   );

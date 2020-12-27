@@ -1,0 +1,40 @@
+{
+    "items" : [
+        {
+            "title": "Dystopian Flight",
+            "thumbnail": "./images/thumb_dystopian_Flight.png",
+            "description":"An immersive exhibition which aims to raise the public awareness of the impact of aviation on the environmental crisis."
+        },
+        
+        {
+            "title": "European Space Agency",
+            "thumbnail": "./images/thumbb_european_space_agency.png",
+            "description":"How could Space Agency office be rejuvenated?"
+        },
+        
+        {
+            "title": "RAISE",
+            "thumbnail": "./images/thumb_raise.png",
+            "description":"***An exclusive champagne dining experience implying the importance of natural farming"
+        },
+
+        {
+            "title": "The last dinner on earth",
+            "thumbnail": "./images/thumb_the_last_dinner_on_earth.png",
+            "description":"***An exclusive champagne dining experience implying the importance of natural farming"
+        },
+
+        {
+            "title": "UCLH children’s hospital",
+            "thumbnail": "./images/thumb_uclh_children_hospital.png",
+            "description":"A meditative interior design for children’s accident and emergency depaartment in university college london hospital"
+        },
+
+        {
+            "title": "Portable Ocean",
+            "thumbnail": "./images/thumb_portable_ocean.png",
+            "description":"Pop up concept store for B&O Beoplay SS18 collection 'Inspired by the ocean'"
+        }
+
+    ]
+}

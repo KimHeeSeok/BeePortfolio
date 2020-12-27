@@ -1,0 +1,51 @@
+{
+    "items" : [
+        {
+            "title": "Wearable Accessibility",
+            "thumbnail": "./images/thumb_wearable_accessibility.png",
+            "description":"A new sound UI on smart watch to support visually impaired usersA new sound UI on smart watch to support visually impaired"
+        },
+        
+        {
+            "title": "Inside Kitchen A.I",
+            "thumbnail": "./images/thumb_inside_kitchen_ai.png",
+            "description":"An advanced kitchen A.I which automates your redundant cooking chores"
+        },
+        
+        {
+            "title": "Samsung PSSD",
+            "thumbnail": "./images/thumb_samsung_pssd.png",
+            "description":"Portable SSD’s encryiption software for MacOS, Windows, and Android *supports the Advanced Encryption Standard (AES), developed by the National Institute of Standards and Technology (NIST),"
+        },
+        
+        {
+            "title": "Medibloc",
+            "thumbnail": "./images/thumb_medibloc.png",
+            "description":"TODO A new sound UI on smart watch to support visually impaired usersA new sound UI on smart watch to support visually impaired"
+        },
+
+        {
+            "title": "Mamacademy",
+            "thumbnail": "./images/thumb_mamacademy.png",
+            "description":"TODO A new sound UI on smart watch to support visually impaired usersA new sound UI on smart watch to support visually impaired"
+        },
+
+        {
+            "title": "Next TV",
+            "thumbnail": "./images/thumb_next_tv.png",
+            "description":"TODO A new sound UI on smart watch to support visually impaired usersA new sound UI on smart watch to support visually impaired"
+        },
+
+        {
+            "title": "Rollable display",
+            "thumbnail": "./images/thumb_rollable_display.png",
+            "description":"TODO A new sound UI on smart watch to support visually impaired usersA new sound UI on smart watch to support visually impaired"
+        },
+
+        {
+            "title": "Interactive Drive Experience",
+            "thumbnail": "./images/thumb_interactive_drive_experience.png",
+            "description":"TODO A new sound UI on smart watch to support visually impaired usersA new sound UI on smart watch to support visually impaired"
+        }
+    ]
+}

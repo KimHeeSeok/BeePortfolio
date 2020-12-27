@@ -3,8 +3,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import './Bio.css';
 
 const divStyle: CSSProperties = {
-
-    height:"2000px"
+    // height:"2000px"
 };
 
 export default function Bio() {
