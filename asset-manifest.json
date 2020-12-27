@@ -1,24 +1,38 @@
 {
   "files": {
-    "main.css": "/BeePortfolio/static/css/main.83ffeee7.chunk.css",
-    "main.js": "/BeePortfolio/static/js/main.b501c4d3.chunk.js",
-    "main.js.map": "/BeePortfolio/static/js/main.b501c4d3.chunk.js.map",
-    "runtime-main.js": "/BeePortfolio/static/js/runtime-main.d9d817c0.js",
-    "runtime-main.js.map": "/BeePortfolio/static/js/runtime-main.d9d817c0.js.map",
-    "static/js/2.4ec2319c.chunk.js": "/BeePortfolio/static/js/2.4ec2319c.chunk.js",
-    "static/js/2.4ec2319c.chunk.js.map": "/BeePortfolio/static/js/2.4ec2319c.chunk.js.map",
-    "static/js/3.8d190192.chunk.js": "/BeePortfolio/static/js/3.8d190192.chunk.js",
-    "static/js/3.8d190192.chunk.js.map": "/BeePortfolio/static/js/3.8d190192.chunk.js.map",
+    "main.css": "/BeePortfolio/static/css/main.28171d90.chunk.css",
+    "main.js": "/BeePortfolio/static/js/main.481b9726.chunk.js",
+    "main.js.map": "/BeePortfolio/static/js/main.481b9726.chunk.js.map",
+    "runtime-main.js": "/BeePortfolio/static/js/runtime-main.1fa03705.js",
+    "runtime-main.js.map": "/BeePortfolio/static/js/runtime-main.1fa03705.js.map",
+    "static/js/2.ab74d40c.chunk.js": "/BeePortfolio/static/js/2.ab74d40c.chunk.js",
+    "static/js/2.ab74d40c.chunk.js.map": "/BeePortfolio/static/js/2.ab74d40c.chunk.js.map",
+    "static/js/3.45aab02c.chunk.js": "/BeePortfolio/static/js/3.45aab02c.chunk.js",
+    "static/js/3.45aab02c.chunk.js.map": "/BeePortfolio/static/js/3.45aab02c.chunk.js.map",
+    "thumb_wearable_accessibility.png": "/BeePortfolio/039e7d3bac839db2eea2a7b3bd1e2da0.png",
     "bee.svg": "/BeePortfolio/128e740f4eb48ec7325220388f990c45.svg",
+    "thumb_next_tv.png": "/BeePortfolio/479b2088622c4c00dbdd7178e72cd64e.png",
+    "thumb_inside_kitchen_ai.png": "/BeePortfolio/4f7e03eb71d6bb086581e4cdc855d6e2.png",
+    "thumb_medibloc.png": "/BeePortfolio/517df8cd4cfde582cc03bb4ea4e993c1.png",
+    "thumb_mamacademy.png": "/BeePortfolio/604e3fefd0b20bf03cae83e237c432a9.png",
+    "thumb_uclh_children_hospital.png": "/BeePortfolio/7043a046435d742df7fbcc83acc853b5.png",
+    "thumb_interactive_drive_experience.png": "/BeePortfolio/73d298f26f195535d07b511dabd40fd6.png",
+    "thumb_the_last_dinner_on_earth.png": "/BeePortfolio/7e595271b7811c261d4a9113a18cd2cf.png",
+    "thumb_dystopian_Flight.png": "/BeePortfolio/922acfc1d55e3ed4128af268971afa1d.png",
+    "thumb_rollable_display.png": "/BeePortfolio/9c74bd4dc34a9d3963a6035011850ed0.png",
+    "thumbb_european_space_agency.png": "/BeePortfolio/ac4ef38f6ed5201641dee6b447737a2f.png",
+    "thumb_samsung_pssd.png": "/BeePortfolio/b16720e4a1910cccfd95a1b2fcdaf6fc.png",
+    "thumb_portable_ocean.png": "/BeePortfolio/bedd6d93b1d28958e261b0692c359019.png",
     "arrow.svg": "/BeePortfolio/e9ced38e29c6487e42bc1be680c82596.svg",
+    "thumb_raise.png": "/BeePortfolio/fa38353e341cfc849d9b41a8ced5ace8.png",
     "index.html": "/BeePortfolio/index.html",
-    "static/css/main.83ffeee7.chunk.css.map": "/BeePortfolio/static/css/main.83ffeee7.chunk.css.map",
-    "static/js/2.4ec2319c.chunk.js.LICENSE.txt": "/BeePortfolio/static/js/2.4ec2319c.chunk.js.LICENSE.txt"
+    "static/css/main.28171d90.chunk.css.map": "/BeePortfolio/static/css/main.28171d90.chunk.css.map",
+    "static/js/2.ab74d40c.chunk.js.LICENSE.txt": "/BeePortfolio/static/js/2.ab74d40c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d9d817c0.js",
-    "static/js/2.4ec2319c.chunk.js",
-    "static/css/main.83ffeee7.chunk.css",
-    "static/js/main.b501c4d3.chunk.js"
+    "static/js/runtime-main.1fa03705.js",
+    "static/js/2.ab74d40c.chunk.js",
+    "static/css/main.28171d90.chunk.css",
+    "static/js/main.481b9726.chunk.js"
   ]
 }
