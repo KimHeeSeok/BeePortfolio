@@ -94,7 +94,6 @@ p {
   flex: 1 1 auto;
   position: relative;
   overflow-y: scroll;
-
 }
 
 /* change scroll bar desing */
@@ -109,7 +108,7 @@ p {
   box-shadow: rgba(0, 0, 0, 0.3) inset 0 0 0 4px;
 }
 
-#page-main-content {
+.page-main-content {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -155,6 +154,8 @@ p {
 
 .fade-exit {
   opacity: 1;
+  /* to avoid bumpy animation */
+  /* position: absolute; */
 }
 
 .fade-exit.fade-exit-active {

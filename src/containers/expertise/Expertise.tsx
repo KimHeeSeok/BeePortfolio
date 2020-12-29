@@ -7,16 +7,14 @@ export default function Expertise() {
         <div className="main-layout-grid margin-top-small" >
             <div className="main-header" >Expertise</div>
 
-            <div id="circle-container">
-                <div id="aaa" >
+            <div id="circle-container" >
+                <div id="circle-container-guide" >
                     <span id="circle-tech" className="circle">Tech</span>
                     <span id="circle-people" className="circle">People</span>
                     <span id="circle-experience" className="circle">Experience</span>
                     <span id="circle-space" className="circle">Space</span>
                 </div>
             </div>
-
-            <div id="expertise-margin"></div>
 
             <div id="expertise-text">
                 <p>

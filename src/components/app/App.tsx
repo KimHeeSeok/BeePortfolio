@@ -100,7 +100,7 @@ function App({ location, match }: RouteComponentProps) {
           timeout={timeout}
           classNames="fade" >
 
-          <section id="page-main-content">
+          <section className="page-main-content">
               <Switch location={location}>
                 <Route path={`${match.path}/bio`}><Bio /></Route>
                 <Route path={`${match.path}/cv`} ><Cv /></Route>

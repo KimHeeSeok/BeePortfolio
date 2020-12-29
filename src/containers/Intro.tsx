@@ -12,7 +12,7 @@ export default function Intro() {
     return (
         <div style={divStyle} >
             <div id="intro_bg">
-                <div id="intro_content" className={"vertical-center horizontal-center"} >
+                <div id="intro_content" className="vertical-center horizontal-center" >
                     <div id="intro_text1">Digital & spatial<br/>
                     visual experience designer</div>
                     <div id="intro_text2">Eunbi Kim portfolio</div>

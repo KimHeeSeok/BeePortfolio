@@ -5,10 +5,6 @@
         --circle-text-padding:10px;
         --circle-text-size:16px;
     }
-
-	#expertise-margin {
-	
-    }
 }
 
 /* others */
@@ -20,12 +16,7 @@
 
         --circle-text-size: min(28px, calc(10px + (28 - 10) * ((100vw - 768px) / (1920.0 - 768.0))));
     }
-
-	#expertise-margin {
-		/* flex-grow: 6; */
-		/* flex-basis: 0; */
-    }
-    
+ 
     #circle-container{
         grid-row-start: 1;
         grid-column-start: 2;
@@ -40,6 +31,23 @@
 
 #circle-container {
     align-self: start;
+
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#circle-container-guide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#circle-container-guide:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 #circle-tech {
@@ -74,19 +82,6 @@
     align-items: flex-end;
 }
 
-#aaa {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-}
-
-#aaa:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
 .circle {
     position: absolute;
     height: 56%;
@@ -95,7 +90,7 @@
     padding: var(--circle-text-padding);
 
     border-radius: 50%;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     display: inline-flex;
     font-family: Noto Serif;
     font-style: normal;
@@ -105,6 +100,11 @@
 }
 
 #expertise-text p {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
     font-family: Noto Serif KR;
     font-style: normal;
     font-weight: 300;
