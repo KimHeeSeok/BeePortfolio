@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/BeePortfolio/static/css/main.23cc51bd.chunk.css",
-    "main.js": "/BeePortfolio/static/js/main.7604d954.chunk.js",
-    "main.js.map": "/BeePortfolio/static/js/main.7604d954.chunk.js.map",
+    "main.css": "/BeePortfolio/static/css/main.434c2176.chunk.css",
+    "main.js": "/BeePortfolio/static/js/main.bdd718c2.chunk.js",
+    "main.js.map": "/BeePortfolio/static/js/main.bdd718c2.chunk.js.map",
     "runtime-main.js": "/BeePortfolio/static/js/runtime-main.b1e86b81.js",
     "runtime-main.js.map": "/BeePortfolio/static/js/runtime-main.b1e86b81.js.map",
     "static/js/2.1cef7934.chunk.js": "/BeePortfolio/static/js/2.1cef7934.chunk.js",
@@ -30,13 +30,13 @@
     "2.png": "/BeePortfolio/ed34e2d504856935456c2ff00008ce45.png",
     "thumb_raise.png": "/BeePortfolio/fa38353e341cfc849d9b41a8ced5ace8.png",
     "index.html": "/BeePortfolio/index.html",
-    "static/css/main.23cc51bd.chunk.css.map": "/BeePortfolio/static/css/main.23cc51bd.chunk.css.map",
+    "static/css/main.434c2176.chunk.css.map": "/BeePortfolio/static/css/main.434c2176.chunk.css.map",
     "static/js/2.1cef7934.chunk.js.LICENSE.txt": "/BeePortfolio/static/js/2.1cef7934.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b1e86b81.js",
     "static/js/2.1cef7934.chunk.js",
-    "static/css/main.23cc51bd.chunk.css",
-    "static/js/main.7604d954.chunk.js"
+    "static/css/main.434c2176.chunk.css",
+    "static/js/main.bdd718c2.chunk.js"
   ]
 }
