@@ -5,6 +5,10 @@
   margin-bottom: 60px;
 }
 
+.list-item-container a {
+  text-decoration: none;
+}
+
 .list-item-container img {
   margin-bottom: 30px;
   width: 100%;
@@ -17,9 +21,9 @@
   font-family: Noto Serif;
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   font-size: 26px;
   line-height: 35px;
-
   color: #20252E;
 }
 
@@ -29,6 +33,5 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-
   color: #20252E;
 }

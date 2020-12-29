@@ -7,10 +7,8 @@ const divStyle: CSSProperties = {
 
 export default function Cv() {
     return (
-        <div id="main-container" style={divStyle}  >
-            <div id="main-header" ><span>CV</span></div>
-            {/* <div className="flex-width1" /> */}
-
+        <div className="main-layout-grid margin-top-small" style={divStyle}  >
+            <div className="main-header" >CV</div>
             <div id="cv-content">
 
                 <div className="cv-column">

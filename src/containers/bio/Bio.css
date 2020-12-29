@@ -4,10 +4,6 @@
 		--bio_text_size: 18px
 	}
 
-	#bio-margin {
-	
-	}
-
 	#bio-content {
 	}
 }
@@ -18,14 +14,9 @@
 		--bio_text_size: 36px
 	}
 
-	#bio-margin {
-		flex-grow: 1;
-		flex-basis: 0;
-	}
-
 	#bio-content {
-		flex-grow: 9;
-		flex-basis: 0;
+		grid-column-start: 4;
+		grid-column-end: 13;
 	}
 }
 
@@ -41,6 +32,5 @@
 	font-weight: 500;
 	font-size: var(--bio_text_size);
 	border-bottom: 2px solid #20252E;
-	/* text-decoration: underline; */
 	color: #20252E;
 }

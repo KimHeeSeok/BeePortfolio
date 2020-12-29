@@ -8,9 +8,8 @@ const divStyle: CSSProperties = {
 
 export default function Bio() {
     return (
-        <div id="main-container"  style={divStyle}  >
-            <div id="main-header">Bio</div>
-            <div id="bio-margin" />
+        <div className="main-layout-grid margin-top-small" style={divStyle}  >
+            <div className="main-header">Bio</div>
             <div id="bio-content" >
                 <span className="bio_text_1">As an integrated designer based in Seoul and London, Eunbi Kim is specialised in digital and spatial design based on user experiences and emotions.
                 She worked for Samsung Electronics, European Space Agency, Marshmallow Laser Feast and several IT Startups regarding </span>

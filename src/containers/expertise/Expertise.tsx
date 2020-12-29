@@ -4,14 +4,16 @@ import './Expertise.css';
 
 export default function Expertise() {
     return (
-        <div id="main-container" >
-            <div id="main-header" >Expertise</div>
+        <div className="main-layout-grid margin-top-small" >
+            <div className="main-header" >Expertise</div>
 
             <div id="circle-container">
-                <span id="circle-tech" className="circle">Tech</span>
-                <span id="circle-people" className="circle">People</span>
-                <span id="circle-experience" className="circle">Experience</span>
-                <span id="circle-space" className="circle">Space</span>
+                <div id="aaa" >
+                    <span id="circle-tech" className="circle">Tech</span>
+                    <span id="circle-people" className="circle">People</span>
+                    <span id="circle-experience" className="circle">Experience</span>
+                    <span id="circle-space" className="circle">Space</span>
+                </div>
             </div>
 
             <div id="expertise-margin"></div>

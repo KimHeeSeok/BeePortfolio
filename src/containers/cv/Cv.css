@@ -12,8 +12,8 @@
 /* others */
 @media all and (min-width: 768px) {
 	#cv-content {
-		flex-grow: 9;
-		flex-basis: 0;
+		grid-column-start: 3;
+		grid-column-end: 12;
 
 		-webkit-column-count: 3;
 		-moz-column-count: 3;
@@ -32,8 +32,6 @@
 #cv-content {
 	flex-wrap: wrap;
 	display: inline-flex;
-
-
 }
 
 /* .cv-column:not(:last-of-type) {
